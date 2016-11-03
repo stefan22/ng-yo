@@ -31,6 +31,16 @@ module.exports = function(grunt) {
 
     }, // concat ends
 
+    wiredep: {
+      task: {
+        src: 'public/builds/dest/**/*.html'
+      
+
+      }
+
+
+    }, //wiredep
+
     sass: {
       dist: {
         options: {
@@ -59,14 +69,22 @@ module.exports = function(grunt) {
       //connect
       server: {
         options: {
-          hostname: 'localhost',
-          port: 3000,
+          hostname: '0.0.0.0',
+          port: 9000,
           base: 'public/builds/dest/',
-          livereload: true
+          keepalive: true
         }
       }
 
     }, //connect & livereload
+
+    open: {
+      all: {
+        //gets port from connect configuration
+        path: 'http://localhost:9000'
+      }
+
+    },//open browser
 
     watch: {
       // watching everywhere really
@@ -106,12 +124,18 @@ module.exports = function(grunt) {
   // :grunt connect
   grunt.loadNpmTasks('grunt-contrib-connect');
 
+  // :grunt open
+  grunt.loadNpmTasks('grunt-open');
+
   // :grunt bower-concat
   grunt.loadNpmTasks('grunt-bower-concat');
+
+  // :grunt wiredep
+  grunt.loadNpmTasks('grunt-wiredep');
 
   
   // :grunt
   //default tasks
-  grunt.registerTask('default', ['uglify','concat', 'bower_concat', 'sass', 'connect', 'watch']);
+  grunt.registerTask('default', ['open', 'wiredep', 'uglify','concat', 'bower_concat', 'sass', 'connect', 'watch']);
 
 }; //wrapper function
