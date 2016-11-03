@@ -30,8 +30,8 @@ Overview:
 
 1. create a `Gemfile` with:          
     ```   
-           source 'https://rubygems.org'            
-           gem 'sass'        
+           source 'https://rubygems.org'                     
+           gem 'sass'               
     ```
 2. type __bundle install__    
 
