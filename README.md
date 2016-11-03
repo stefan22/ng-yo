@@ -29,11 +29,11 @@ Overview:
 ### Sass ( using bundler)
 
 1. create a `Gemfile` with:
-```
+
                   __source 'https://rubygems.org'__                            
                   __gem 'sass'__                      
 
-```
+
 2. type __bundle install__    
 
 ### grunt
