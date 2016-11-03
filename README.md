@@ -18,8 +18,8 @@ Overview:
 #####  <kbd>[grunt documentation](http://http://gruntjs.com/)</kbd>
 
 > __Plugings Included__:     
-> grunt-bower-concat, grunt-contrib-concat, grunt-contrib-connect, grunt-contrib-uglify,       
-> grunt-contrib-watch, grunt-sass
+> __grunt-bower-concat__, __grunt-contrib-concat__, __grunt-contrib-connect__, __grunt-contrib-uglify__,             
+> __grunt-contrib-watch__, __grunt-sass__
 
 ### builds folder
 
