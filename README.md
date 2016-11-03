@@ -17,8 +17,8 @@ Overview:
 #####  <kbd>[jQuery library](https://jquery.com/)</kbd>
 #####  <kbd>[grunt documentation](http://http://gruntjs.com/)</kbd>
 
-> __Plugings Included__
-grunt-bower-concat, grunt-contrib-concat, grunt-contrib-connect, grunt-contrib-uglify,       
+> __Plugings Included__:     
+> grunt-bower-concat, grunt-contrib-concat, grunt-contrib-connect, grunt-contrib-uglify,       
 > grunt-contrib-watch, grunt-sass
  
 
