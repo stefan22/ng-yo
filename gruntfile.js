@@ -1,8 +1,6 @@
 module.exports = function(grunt) {
 
   // SL Proj Config.
-  // run a group of plugins with default or run them one by one.
-  // everytime re-writes over it.
   grunt.initConfig({
     //for moving all my js files into one single minimized js file.
     uglify: {
