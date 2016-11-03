@@ -11,11 +11,11 @@ Overview:
    
 ## Links:
   
-#####  [sass documentation](http://sass-lang.com/)
-#####  [angular documentation](https://angularjs.org/)
-#####  [bootstrap documentation](http://getbootstrap.com/)
-#####  [jQuery library](https://jquery.com/)
-#####  [grunt documentation](http://http://gruntjs.com/)
+######  [sass documentation](http://sass-lang.com/)
+######  [angular documentation](https://angularjs.org/)
+######  [bootstrap documentation](http://getbootstrap.com/)
+######  [jQuery library](https://jquery.com/)
+######  [grunt documentation](http://http://gruntjs.com/)
     * plugins:
         - grunt-bower-concat
         - grunt-contrib-concat
