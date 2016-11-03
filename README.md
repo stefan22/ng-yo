@@ -29,9 +29,9 @@ Overview:
 ### grunt
 
 1. run each command individually.              
-    *  Ex. grunt watch or grunt uglify         
+    *  Ex. `grunt watch` or `grunt uglify`         
 2. run them all with default task.             
-    *  Ex. grunt       
+    *  Ex. `grunt`       
 
  
 <br />
