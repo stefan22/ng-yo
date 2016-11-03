@@ -26,6 +26,15 @@ Overview:
 1. `builds/src`  => files to be process
 2. `builds/dest` => files processed
 
+### Sass ( using bundler)
+
+1. create a `Gemfile` with:
+    ````   
+           source 'https://rubygems.org'
+           gem 'sass'
+    ```
+2. type __bundle install__    
+
 ### grunt
 
 1. run each command individually.              
