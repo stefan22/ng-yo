@@ -25,3 +25,5 @@ Overview:
       * Mac or Windows: `https://github.com/stefan22/workflow-folder.git`
      
 2. Install dependencies
+
+> __Important Note About Installation__
