@@ -1,0 +1,21 @@
+{
+  "name": "ng-yo",
+  "description": "",
+  "authors": "SL",
+  "license": "MIT",
+  "homepage": "https://github.com/stefan22/ng-yo",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "angular": "^1.5.8",
+    "angular-resource": "^1.5.8",
+    "mustache.js": "mustache#^2.2.1"
+  }
+}
