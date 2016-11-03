@@ -21,6 +21,9 @@ Overview:
 > __grunt-bower-concat__, __grunt-contrib-concat__, __grunt-contrib-connect__, __grunt-contrib-uglify__,             
 > __grunt-contrib-watch__, __grunt-sass__, __grunt-watch__, __grunt-connect__ with __livereload__
 
+
+![workflow-folder screenshot](/workflow-folder.png?raw=true "workflow-folder")
+
 ### builds folder
 
 1. `builds/src`  => files to be process
