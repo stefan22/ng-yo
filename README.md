@@ -28,8 +28,8 @@ Overview:
 
 ### Sass ( using bundler)
 
-1. create a `Gemfile` with:
-    ````   
+1. create a `Gemfile` with:          
+    ```   
            source 'https://rubygems.org'
            gem 'sass'
     ```
