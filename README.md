@@ -11,11 +11,11 @@ Overview:
    
 ## It includes:
   
-####  [sass](http://sass-lang.com/)
-####  [angular](https://angularjs.org/)
-####  [bootstrap](http://getbootstrap.com/)
-####  [jQuery](https://jquery.com/)
-####  [grunt](http://http://gruntjs.com/)
+#####  [sass](http://sass-lang.com/)
+#####  [angular](https://angularjs.org/)
+#####  [bootstrap](http://getbootstrap.com/)
+#####  [jQuery](https://jquery.com/)
+#####  [grunt](http://http://gruntjs.com/)
     * plugins:
         - grunt-bower-concat
         - grunt-contrib-concat
