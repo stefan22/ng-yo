@@ -15,7 +15,6 @@
     "jquery": "^3.1.1",
     "bootstrap": "^3.3.7",
     "angular": "^1.5.8",
-    "angular-resource": "^1.5.8",
-    "mustache.js": "mustache#^2.2.1"
+    "angular-resource": "^1.5.8"
   }
 }
