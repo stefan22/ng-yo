@@ -20,6 +20,17 @@ Overview:
 > __Plugings Included__:     
 > grunt-bower-concat, grunt-contrib-concat, grunt-contrib-connect, grunt-contrib-uglify,       
 > grunt-contrib-watch, grunt-sass
+
+### builds folder
+
+1. `builds/src`  => files to be process
+2. `builds/dest` => files processed
+
+### grunt
+
+1. run each command individually. Ex. grunt watch or grunt uglify
+2  run them all with default task. Ex. grunt
+
  
 <br />
 <hr />
