@@ -45,7 +45,7 @@ Overview:
     *  Ex. `grunt watch` or `grunt uglify`         
 2. run them all with default task.             
     *  Ex. `grunt`
-    *  view: http://localhost:3000
+    *  view: `http://localhost:3000`
 
  
 <br />
