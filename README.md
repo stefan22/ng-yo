@@ -21,8 +21,9 @@ Overview:
 > grunt-bower-concat, grunt-contrib-concat, grunt-contrib-connect, grunt-contrib-uglify,       
 > grunt-contrib-watch, grunt-sass
  
-
-  
+<br />
+<hr />
+### Installation:  
 1. Download or clone this repository to a directory:
       * Mac or Windows: `https://github.com/stefan22/workflow-folder.git`
      
