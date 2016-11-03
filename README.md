@@ -9,13 +9,13 @@ Overview:
 
   
    
-  ## It includes:
+## It includes:
   
-  * [sass](http://sass-lang.com/)
-  * [angular](https://angularjs.org/)
-  * [bootstrap](http://getbootstrap.com/)
-  * [jQuery](https://jquery.com/)
-  * [grunt](http://http://gruntjs.com/)
+* [sass](http://sass-lang.com/){:target="_blank"}
+* [angular](https://angularjs.org/){:target="_blank"}
+* [bootstrap](http://getbootstrap.com/){:target="_blank"}
+* [jQuery](https://jquery.com/){:target="_blank"}
+* [grunt](http://http://gruntjs.com/){:target="_blank"} 
     - plugins:
         - grunt-bower-concat
         - grunt-contrib-concat
@@ -26,7 +26,7 @@ Overview:
  
 
   
-  1. Download or clone this repository to a directory:
+1. Download or clone this repository to a directory:
       * Mac or Windows: `https://github.com/stefan22/workflow-folder.git`
      
-  2. Install dependencies
+2. Install dependencies
