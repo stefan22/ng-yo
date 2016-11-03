@@ -11,11 +11,11 @@ Overview:
    
 ## Links to resources:
   
-######  <kbd>[sass documentation](http://sass-lang.com/)</kbd>
-######  [angular documentation](https://angularjs.org/)
-######  [bootstrap documentation](http://getbootstrap.com/)
-######  [jQuery library](https://jquery.com/)
-######  [grunt documentation](http://http://gruntjs.com/)
+#####  <kbd>[sass documentation](http://sass-lang.com/)</kbd>
+#####  <kbd>[angular documentation](https://angularjs.org/)</kbd>
+#####  <kbd>[bootstrap documentation](http://getbootstrap.com/)</kbd>
+#####  <kbd>[jQuery library](https://jquery.com/)</kbd>
+#####  <kbd>[grunt documentation](http://http://gruntjs.com/)</kbd>
 > plugins included: grunt-bower-concat, grunt-contrib-concat, grunt-contrib-connect, grunt-contrib-uglify,       
 > grunt-contrib-watch, grunt-sass
  
