@@ -16,13 +16,13 @@ Overview:
 ######  [bootstrap documentation](http://getbootstrap.com/)
 ######  [jQuery library](https://jquery.com/)
 ######  [grunt documentation](http://http://gruntjs.com/)
-    * plugins:
-        - grunt-bower-concat
-        - grunt-contrib-concat
-        - grunt-contrib-connect
-        - grunt-contrib-uglify
-        - grunt-contrib-watch
-        - grunt-sass
+*   plugins:
+-     grunt-bower-concat
+-     grunt-contrib-concat
+-     grunt-contrib-connect
+-     grunt-contrib-uglify
+-     grunt-contrib-watch
+-     grunt-sass
  
 
   
