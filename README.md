@@ -11,7 +11,7 @@ Overview:
    
 ## Links to resources:
   
-#####  <kbd>[sass documentation](http://sass-lang.com/)</kbd>
+#####  <kbd>[sass documentation](http://sass-lang.com/)[newtab]</kbd>
 #####  <kbd>[angular documentation](https://angularjs.org/)</kbd>
 #####  <kbd>[bootstrap documentation](http://getbootstrap.com/)</kbd>
 #####  <kbd>[jQuery library](https://jquery.com/)</kbd>
