@@ -9,9 +9,9 @@ Overview:
 
   
    
-## Links:
+## Links to resources:
   
-######  [sass documentation](http://sass-lang.com/)
+######  <kbd>[sass documentation](http://sass-lang.com/)</kbd>
 ######  [angular documentation](https://angularjs.org/)
 ######  [bootstrap documentation](http://getbootstrap.com/)
 ######  [jQuery library](https://jquery.com/)
