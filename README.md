@@ -16,7 +16,9 @@ Overview:
 #####  <kbd>[bootstrap documentation](http://getbootstrap.com/)</kbd>
 #####  <kbd>[jQuery library](https://jquery.com/)</kbd>
 #####  <kbd>[grunt documentation](http://http://gruntjs.com/)</kbd>
-> plugins included: grunt-bower-concat, grunt-contrib-concat, grunt-contrib-connect, grunt-contrib-uglify,       
+
+> __Plugings Included__
+grunt-bower-concat, grunt-contrib-concat, grunt-contrib-connect, grunt-contrib-uglify,       
 > grunt-contrib-watch, grunt-sass
  
 
@@ -26,4 +28,4 @@ Overview:
      
 2. Install dependencies
 
-> __Important Note About Installation__
+
