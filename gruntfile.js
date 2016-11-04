@@ -37,7 +37,7 @@ module.exports = function(grunt) {
      
 
     }, // concat ends
-
+    // copies bower_components to dest
     copy: {
       main: {
         files: [{
@@ -50,14 +50,7 @@ module.exports = function(grunt) {
 
     },//copy entire bower_components to dest
 
-
-    wiredep: {
-      task: {
-        src: 'public/builds/dest/**/*.html'
-      }
-
-    }, //wiredep
-
+    // process sass from style.scss to dest css
     sass: {
       dist: {
         options: {
@@ -102,13 +95,16 @@ module.exports = function(grunt) {
       },
       scripts: {
         files: [
+          'index.html',
+          'README.md',
           'public/builds/src/**/*.html',
           'public/builds/dest/**/*.html',
           'public/builds/src/js/*.js',
           'public/builds/src/sass/**/*.scss',
-          'public/builds/dest/css/*.css'
+          'public/builds/dest/css/*.css',
+          'public/builds/src/js/*.js'
           ],
-        tasks: ['concat', 'sass']  
+        tasks: ['copy', 'concat', 'sass']  
       }
 
     } //watch
@@ -134,12 +130,6 @@ module.exports = function(grunt) {
   // :grunt open
   grunt.loadNpmTasks('grunt-open');
 
-  // :grunt bower-concat
-  grunt.loadNpmTasks('grunt-bower-concat');
-
-  // :grunt wiredep
-  grunt.loadNpmTasks('grunt-wiredep');
-
   // :grunt copy
   grunt.loadNpmTasks('grunt-contrib-copy');
 
@@ -150,6 +140,6 @@ module.exports = function(grunt) {
   
   // :grunt
   //default tasks
-  grunt.registerTask('default', ['open', 'copy', 'wiredep', 'uglify','dist', 'sass', 'connect', 'watch']);
+  grunt.registerTask('default', ['open', 'copy', 'uglify','dist', 'sass', 'connect', 'watch']);
 
 }; //wrapper function
