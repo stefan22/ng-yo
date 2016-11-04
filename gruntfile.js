@@ -12,30 +12,49 @@ module.exports = function(grunt) {
       builds: {
         //src and dest inside of public folder
         src: 'public/builds/src/js/*.js',
-        dest: 'public/builds/dest/js/myscript.min.js'
+        dest: 'public/builds/dest/js/script.min.js'
       }
     }, //uglify ends
-    // if I have some text assets - place them all into a single file
+    // copying index.html and bower_components to dest folder
     concat: {
       options: {
-        banner: '\n--------------------top of document -----------------\n\n',
-        separator:'\n\n-----------------end of a file-----------------------\n\n',
-        footer: '\n\n--------------------end of document ------------------------\n'
+        //banner: '\n--------------------top of document -----------------\n\n',
+        //separator:'\n\n-----------------end of a file-----------------------\n\n',
+        //footer: '\n\n--------------------end of document ------------------------\n'
       },
-      dist: {
-        src: ['public/builds/src/assets/*.txt'],
-        dest: 'public/builds/dest/assets/alltext.txt'
-      }
+      dist1: {
+        //sends index.html to dest folder
+        src: ['index.html'],
+        dest: 'public/builds/dest/index.html'
+      }, //concat1
+
+      dist2: {
+        // sends readme.md to dest folder
+        src: ['README.md'],
+        dest: 'public/builds/dest/assets/README.md'
+      } //concat2
+
+     
 
     }, // concat ends
+
+    copy: {
+      main: {
+        files: [{
+        // includes files within path and its sub-directories
+          expand: true, 
+          src: ['bower_components/**'], 
+          dest: 'public/builds/dest/'
+        }]
+      }
+
+    },//copy entire bower_components to dest
+
 
     wiredep: {
       task: {
         src: 'public/builds/dest/**/*.html'
-      
-
       }
-
 
     }, //wiredep
 
@@ -51,26 +70,16 @@ module.exports = function(grunt) {
       }
 
     }, //sass
-    // whenever ready to upload files to a server
-    bower_concat: {
-      //adds everything from bower folder to this new folder 
-      all: {
-        dest: 'public/builds/dest/js/_bower.js',
-        cssDest: 'public/builds/dest/css/_bower.css'
-
-      }
-
-    }, //bower_concat
 
      // helps makes it more automatic
     connect: {
       //connect
       server: {
         options: {
-          hostname: '0.0.0.0',
+          hostname: 'localhost',
           port: 9000,
-          base: 'public/builds/dest/',
-          keepalive: true
+          base: '',
+          livereload: true
         }
       }
 
@@ -131,9 +140,16 @@ module.exports = function(grunt) {
   // :grunt wiredep
   grunt.loadNpmTasks('grunt-wiredep');
 
+  // :grunt copy
+  grunt.loadNpmTasks('grunt-contrib-copy');
+
+  //register concat dist1 & dist2 
+  grunt.registerTask('dist', ['concat:dist1', 'concat:dist2']);
+
+
   
   // :grunt
   //default tasks
-  grunt.registerTask('default', ['open', 'wiredep', 'uglify','concat', 'bower_concat', 'sass', 'connect', 'watch']);
+  grunt.registerTask('default', ['open', 'copy', 'wiredep', 'uglify','dist', 'sass', 'connect', 'watch']);
 
 }; //wrapper function
