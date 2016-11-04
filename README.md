@@ -18,7 +18,7 @@ Overview:
 #####  <kbd>[grunt documentation](http://http://gruntjs.com/)</kbd>
 
 > __Plugins Included__:     
-> __grunt-bower-concat__, __grunt-contrib-concat__, __grunt-contrib-connect__, __grunt-contrib-uglify__,             
+> __grunt-contrib-concat__, __grunt-contrib-connect__, __grunt-contrib-uglify__, __grunt-open__, __grunt-contrib-copy__,             
 > __grunt-contrib-watch__, __grunt-sass__, __grunt-watch__, __grunt-connect__ with __livereload__
 
 
@@ -28,6 +28,10 @@ Overview:
 
 1. `builds/src`  => files to be process
 2. `builds/dest` => files processed
+3.  Main __index.html__ at root folder (copies file to dest) = same with README.md to dest/assets         
+4.  Entire __bower_components__ to dest
+5.  Uglifies src/js/scripts.js to dest/js/script.min.js
+
 
 ### Sass ( using bundler)
 
@@ -45,7 +49,7 @@ Overview:
     *  Ex. `grunt watch` or `grunt uglify`         
 2. run them all with default task.             
     *  Ex. `grunt`
-    *  view: `http://localhost:3000`
+    *  view: `http://localhost:9000`
 
  
 <br />
