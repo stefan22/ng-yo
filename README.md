@@ -30,7 +30,7 @@ Overview:
 2. `builds/dest` => files processed
 3.  Main __index.html__ at root folder (copies file to dest) = same with README.md to dest/assets         
 4.  Entire __bower_components__ to dest
-5.  Uglifies src/js/scripts.js to dest/js/script.min.js
+5.  Uglifies `src/js/scripts.js` to `dest/js/script.min.js`
 
 
 ### Sass ( using bundler)
