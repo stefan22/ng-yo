@@ -136,10 +136,14 @@ module.exports = function(grunt) {
   //register concat dist1 & dist2 
   grunt.registerTask('dist', ['concat:dist1', 'concat:dist2']);
 
-
-  
   // :grunt
-  //default tasks
-  grunt.registerTask('default', ['open', 'copy', 'uglify','dist', 'sass', 'connect', 'watch']);
+  // default tasks
+  // faster this way - no need to run all of the tasks
+  grunt.registerTask('default', ['open','sass', 'dist', 'uglify', 'connect', 'watch']);
+
+   // :grunt
+  // prodTasks
+  grunt.registerTask('prodTasks', ['open', 'copy', 'uglify','dist', 'sass', 'connect', 'watch']);
+
 
 }; //wrapper function
