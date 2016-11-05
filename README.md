@@ -1,11 +1,11 @@
-Web Workflow (new & improved!)
-=============================
+Web Workflow (lighter new & improved!)
+======================================
 
 Overview:
 ---------
 
   Takes care of processing Sass, combining scripts and loading frameworks like <kbd>Bootstrap</kbd>, <kbd>JQuery</kbd>
-  and <kbd>Angular</kbd> with <kbd>Grunt.js</kbd> using <kbd>npm</kbd> and <kbd>bower</kbd>.
+  and <kbd>Angular</kbd> with <kbd>Grunt.js</kbd> using <kbd>npm</kbd> and <kbd>bower</kbd>. Sass,Compass and Susy using bundle(ruby).
 
   
    
@@ -18,19 +18,39 @@ Overview:
 #####  <kbd>[grunt documentation](http://http://gruntjs.com/)</kbd>
 
 > __Plugins Included__:     
-> __grunt-contrib-concat__, __grunt-contrib-connect__, __grunt-contrib-uglify__, __grunt-open__, __grunt-contrib-copy__,             
-> __grunt-contrib-watch__, __grunt-sass__, __grunt-watch__, __grunt-connect__ with __livereload__
+> __grunt-contrib-concat__, __grunt-contrib-connect__, __grunt-contrib-uglify__, __grunt-open__,          
+> __grunt-contrib-watch__, __grunt-contrib-compass__, __grunt-watch__, __grunt-connect__ with __livereload__
+> __matchdep__, __grunt-contrib-compass__
 
 
 ![workflow-folder screenshot](/workflow-folder.png?raw=true "workflow-folder")
 
 ### builds folder
 
-1. `builds/src`  => files to be process
-2. `builds/dest` => files processed
-3.  Main __index.html__ at root folder (copies file to dest) = same with README.md to dest/assets         
-4.  Entire __bower_components__ to dest
-5.  Uglifies `src/js/scripts.js` to `dest/js/script.min.js`
+1. `public/['js'][sass]/, public/*.*`  => files to be process
+2. `public/builds/` => files processed
+3.  index.html and readme.md (copying to builds with concat plugin just for fun/don't need it.         
+4.  node_modules,bower_components (normally .ignore)
+
+```
+accidentally included node_modules and bower_components = helped me get rid of node_modules
+
+git filter-branch -f --index-filter "git rm -rf --cached --ignore-unmatch FOLDERNAME" -- --all
+
+replace FOLDERNAME with the file or folder you wish to remove from the given git repository.
+
+Once this is done run the following commands to clean up the local repository
+
+rm -rf .git/refs/original/
+git reflog expire --expire=now --all
+git gc --prune=now
+git gc --aggressive --prune=now
+
+Now push all the changes to the remote repository
+
+git push --all --force
+````
+  
 
 
 ### Sass ( using bundler)
