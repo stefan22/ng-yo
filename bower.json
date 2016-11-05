@@ -1,9 +1,17 @@
 {
-  "name": "ng-yo",
-  "description": "",
-  "authors": "SL",
+  "name": "folderstructure",
+  "description": "folder structure",
+  "authors": "sl",
   "license": "MIT",
-  "homepage": "https://github.com/stefan22/ng-yo",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
   "dependencies": {
     "jquery": "^3.1.1",
     "bootstrap": "^3.3.7",
