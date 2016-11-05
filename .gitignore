@@ -24,6 +24,10 @@ public/bower_components/*
 *.rar
 *.tar
 *.zip
+node_modules
+node-install
+public/bower_components
+.DS_Store
 
 # Logs and databases #
 ######################
