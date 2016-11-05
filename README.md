@@ -58,7 +58,9 @@ git push --all --force
 1. create a `Gemfile` with:
 
                  source 'https://rubygems.org'                           
-                 gem 'sass'                     
+                 gem 'sass'
+                 gem 'compass'
+                 gem 'susy'
 
 
 2. type __bundle install__    
