@@ -76,7 +76,7 @@ git push --all --force
 ```
     
 
-3. type    __bundle install__    
+3. type __bundle install__    
 
 ### grunt
 
