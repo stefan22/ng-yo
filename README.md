@@ -66,18 +66,18 @@ git push --all --force
 2. create __config.rb__    
 
 ```
-              require 'susy'
+            require 'susy'
 
-              css_dir = '/public/builds/css'
-              sass_dir = '/public/sass'
-              javascript_dir = '/public/js'
-              output_style = :expanded
+            css_dir = '/public/builds/css'
+            sass_dir = '/public/sass'
+            javascript_dir = '/public/js'
+            output_style = :expanded
 
 ```
     
 
 
-3. type __bundle install__    
+3. type     __bundle install__    
 
 ### grunt
 
