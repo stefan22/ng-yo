@@ -25,7 +25,7 @@ Overview:
 
 ![workflow-folder screenshot](/workflow-folder.png?raw=true "workflow-folder")
 
-### builds folder
+### Public/builds folder
 
 1. `public/['js'][sass]/, public/*.*`  => files to be process
 2. `public/builds/` => files processed
@@ -77,6 +77,7 @@ git push --all --force
     
 
 3. type __bundle install__    
+
 
 ### grunt
 
