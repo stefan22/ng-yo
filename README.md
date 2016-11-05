@@ -63,7 +63,21 @@ git push --all --force
                  gem 'susy'
 
 
-2. type __bundle install__    
+2. create __config.rb__    
+
+```
+              require 'susy'
+
+              css_dir = '/public/builds/css'
+              sass_dir = '/public/sass'
+              javascript_dir = '/public/js'
+              output_style = :expanded
+
+```
+    
+
+
+3. type __bundle install__    
 
 ### grunt
 
