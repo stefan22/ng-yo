@@ -1,6 +1,15 @@
-function hyman(){
-	var a = 5;
-	var b = 2;
-	var c = 7;
-	return a + b + c;
-}
+(function() {
+
+	function Animal(name,type,legs) {
+		this.name = name;
+		this.type = type;
+		this.legs = legs;
+	};
+
+	var animal1 = new Animal();
+
+	animal1.name = 'liene';
+	animal1.type = 'dog';
+	animal1.legs = 6;
+
+})();
