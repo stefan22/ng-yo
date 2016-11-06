@@ -85,7 +85,7 @@ git push --all --force
     *  Ex. `grunt watch` or `grunt uglify`         
 2. run them all with default task.             
     *  Ex. `grunt`
-    *  view: `http://localhost:9000`
+    *  view: `http://localhost:9001`
 
  
 <br />
