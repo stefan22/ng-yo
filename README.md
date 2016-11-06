@@ -100,3 +100,4 @@ git push --all --force
 
 >  i still need a symlink and cache plugin
 >  and network get busy after a while and have to shutdown terminal to fix it
+

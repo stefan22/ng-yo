@@ -2,26 +2,6 @@ module.exports = function(grunt) {
   //SL Proj Config.
   grunt.initConfig({
     
-      cachebreaker: {
-        //append a timestamp to all my js and css files in index.html
-        // it keeps it real - having a ref# all-http-status 200 now!
-        dev: {
-          options: {
-            match: [
-              'bootstrap.css','reset.css','styles.css','jquery.js',
-              'bootstrap.js','angular.js','angular-resource.js',
-              'scripts.js'
-            ],
-            livereload: true,
-
-          },
-          files: {
-            src: ['index.html']
-          }
-
-        }
-
-      }, //cachebreaker
 
       clean: {
 
@@ -31,7 +11,6 @@ module.exports = function(grunt) {
         },
 
       uglify: {
-        //minimizes all scripts => to builds/js/scripts.min.js
         options: {
           banner: '-----------------------top of document -----------------\n\n',
           footer: '\n\n--------------------end of file ---------------------\n'
@@ -53,22 +32,19 @@ module.exports = function(grunt) {
 
         dist1: {
           //sends index.html to dest folder
-          src:  'index.html',
+          src: ['index.html'],
           dest: 'public/builds/index.html'
         }, //concat1
 
         dist2: {
           // sends readme.md to dest folder
-          src:  'README.md',
+          src: ['README.md'],
           dest: 'public/builds/README.md'
         }, //concat2
 
          dist3: {
-          options: {
-            separator: '\n\n/*--------- end of style sheet -------*/\n\n'
-          },
-          // must declare a destination file
-          src:  ['public/sass/*.scss'],
+          // sends scss to dest folder
+          src: ['public/sass/styles.scss'],
           dest: 'public/builds/css/styles.css'
         } //concat3
 
@@ -77,8 +53,6 @@ module.exports = function(grunt) {
       }, // concat ends
 
       // compass for sass
-      // processes all files and makes copies on builds folder
-      // style.scss => contains all scss builds
       compass: {
         dev: {
           options: {
@@ -157,14 +131,31 @@ module.exports = function(grunt) {
         }, //mdfiles
 
         sass: {
-          files: ['public/sass/*.scss'],
-          tasks: ['concat:dist3'],
+          files: 'public/sass/styles.scss',
+          tasks: ['compass:dev'],
           options: {
-            livereload: true
-            
+            livereload: true,
+            cwd: {
+              files: 'public/builds/css/*.css',
+              spawn: false
+            }
           }
 
         }, //sass
+
+        somecss: {
+          files: 'public/builds/css/styles.css',
+          tasks: ['concat:dist3'],
+          options: {
+            livereload: true,
+            cwd: {
+              files: 'public/sass/*.scss',
+              spawn: false
+            } 
+          } //options css
+          
+         
+      } //somecss
 
         
 
@@ -174,9 +165,6 @@ module.exports = function(grunt) {
 
   // :grunt clean
   grunt.loadNpmTasks('grunt-contrib-clean');
-
-  // :grunt cache
-  grunt.loadNpmTasks('grunt-cache-breaker');
 
   // :grunt uglify
   grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -191,8 +179,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // :grunt open
-  // livereload the original => deprecated
-  // now is part of contrib-connect
   //grunt.loadNpmTasks('connect-livereload');
 
   // :grunt connect
@@ -208,7 +194,7 @@ module.exports = function(grunt) {
 
 // :grunt
 // default tasks
-grunt.registerTask('default', ['cachebreaker', 'clean',  'open', 'dist',  'uglify', 'compass:dev', 'connect',  'watch']);
+grunt.registerTask('default', ['clean',  'open', 'dist',  'uglify', 'compass:dev', 'connect',  'watch']);
 
 
 

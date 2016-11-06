@@ -7,9 +7,14 @@
 	};
 
 	var animal1 = new Animal();
+	var animal2 = new Animal();
 
 	animal1.name = 'liene';
 	animal1.type = 'dog';
 	animal1.legs = 6;
+
+	animal2.name = 'lupo';
+	animal2.type = 'dog';
+	animal2.legs = 3;
 
 })();
