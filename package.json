@@ -12,10 +12,12 @@
     "grunt-contrib-compass": "^1.1.1",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-connect": "^1.0.2",
-    "grunt-contrib-livereload": "^0.1.2",
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-open": "^0.2.3",
     "matchdep": "^1.0.1"
+  },
+  "dependencies": {
+    "coffee-script": "^1.11.1"
   }
 }
