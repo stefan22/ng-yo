@@ -12,4 +12,10 @@
 	animal1.type = 'dog';
 	animal1.legs = 6;
 
+	var animal3 = new Animal();
+
+	animal1.name = 'loone';
+	animal1.type = 'duck';
+	animal1.legs = 2;
+
 })();

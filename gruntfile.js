@@ -24,11 +24,14 @@ module.exports = function(grunt) {
 
       uglify: {
         options: {
-          banner: '-----------------------top of document -----------------\n\n',
-          footer: '\n\n--------------------end of file ---------------------\n'
+          banner: '//----------------------top of document -----------------\n\n',
+          footer: '\n\n//--------------------end of file ---------------------\n',
+          //maps the code in compressed files
+          sourceMap: true,
+          sourceMapName: 'public/builds/assets/sourcemap.map'
         },
         builds: {
-          src:'public/js/*.js',
+          src:['public/js/*.js'],
           dest:'public/builds/js/scripts.min.js'
         }
 
@@ -37,9 +40,9 @@ module.exports = function(grunt) {
       // copies index.html,readme.md and process scss/css to dest folder
       concat: {
         options: {
-          //banner: '\n--------------------top of document ------------\n\n',
-          //separator:'\n\n-----------------end of a file---------------\n\n',
-          //footer: '\n\n--------------------end of document ------------\n'
+          //banner: '\n----------------------top of document ------------\n\n',
+          //separator:'\n\n-------------------end of a file---------------\n\n',
+          //footer: '\n\n----------------------end of document --------------\n'
         },
 
         dist1: {
@@ -51,12 +54,16 @@ module.exports = function(grunt) {
         dist2: {
           // sends readme.md to dest folder
           src: ['README.md'],
-          dest: 'public/builds/README.md'
+          dest: 'public/builds/assets/README.md'
         }, //concat2
 
          dist3: {
           // sends scss to dest folder
-          src: ['public/sass/styles.scss'],
+          options: {
+            banner: '/*----------------------Beg.Of Styles.css ------------*/\n\n\n',
+            separator:'\n\n/*---------------- end of a file --------------*/\n\n'
+          },
+          src: ['public/sass/*.scss'],
           dest: 'public/builds/css/styles.css'
         } //concat3
 
@@ -64,7 +71,8 @@ module.exports = function(grunt) {
 
       }, // concat ends
 
-      // compass for sass
+      // compass for sass - src/dest settings in config.rb
+      // compass:dev, concat:dist3 tasks
       compass: {
         dev: {
           options: {
@@ -84,14 +92,7 @@ module.exports = function(grunt) {
               port: 9001,
               base: '',
               livereload: true,
-              debug:true,
-              //useAvailablePort:true,
-              //onCreateServer: function(server,connect,options) {
-              //  var io = require('socket.io').listen(server);
-              // io.sockets.on('connection', function(socket) {
-              //      document.write('server is on like donkey kong!');
-              //  });
-             // }
+              debug:true
 
             }, //options
 
@@ -121,14 +122,7 @@ module.exports = function(grunt) {
           //run faster
           spawn: false,
           livereload: true,
-          //debounceDelay:100,
-          //event: all,
-          reload:true
-          //forever:true,
-          //dateFormat: function(time) {
-            //grunt.log.writeln('the watch finished in ' + time + 'ms - ' + (new Date()).toString());
-            //grunt.log.writeln('finito - get back to work, so i can make more changes...');
-          //}
+          //reload:true
         }, //options watch
 
         configFiles: {
@@ -158,13 +152,9 @@ module.exports = function(grunt) {
 
         sass: {
           files: 'public/sass/*.scss',
-          tasks: ['compass:dev', 'concat:dist3'],
+          tasks: ['compass:dev'],
           options: {
-            livereload: true,
-            cwd: {
-              files: 'public/builds/css/*.css',
-              spawn: false
-            }
+            livereload: true
           }
 
         } //sass

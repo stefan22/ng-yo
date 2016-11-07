@@ -1,3 +1,13 @@
-$red: #f0f0f0;
+/* 
+---------------------------------------
+ 		*** Styles.css ***
+    	==================
+_______________________________________*/
+/*
 
-$heading: 32px;
+*/
+/* line 14, ../../sass/styles.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
