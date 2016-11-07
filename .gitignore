@@ -6,16 +6,14 @@
 *.exe
 *.o
 *.so
-# Untracked files:
-[...]
-*.[oa]
+
 
 # Packages #
 ############
 
 node-install/*
 node_modules/*
-public/bower_components/*
+bower_components/*
 *.7z
 *.dmg
 *.gz
@@ -26,8 +24,9 @@ public/bower_components/*
 *.zip
 node_modules
 node-install
-public/bower_components
+bower_components
 .DS_Store
+.sass-cache
 
 # Logs and databases #
 ######################
