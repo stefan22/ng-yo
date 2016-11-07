@@ -20,7 +20,7 @@ Overview:
 > __Plugins Included__:     
 > __grunt-contrib-concat__, __grunt-contrib-connect__, __grunt-contrib-uglify__, __grunt-open__,          
 > __grunt-contrib-watch__, __grunt-contrib-compass__, __grunt-watch__, __grunt-connect__ with __livereload__
-> __matchdep__, __grunt-contrib-compass__
+> __matchdep__, __grunt-contrib-compass__, __grunt-cache-breaker__
 
 
 ![workflow-folder screenshot](/workflow-folder.png?raw=true "workflow-folder")
@@ -85,7 +85,7 @@ git push --all --force
     *  Ex. `grunt watch` or `grunt uglify`         
 2. run them all with default task.             
     *  Ex. `grunt`
-    *  view: `http://localhost:9000`
+    *  view: `http://localhost:9001`
 
  
 <br />

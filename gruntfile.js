@@ -1,14 +1,26 @@
 module.exports = function(grunt) {
   //SL Proj Config.
   grunt.initConfig({
+
+      cachebreaker: {
+        dev: {
+          options: {
+            match: [
+              'bootstrap.css', 'reset.css', 'styles.css', 'jquery.js',
+              'bootstrap.js', 'angular.js', 'angular-resource.js',
+              'scripts.min.js'
+            ]
+          },
+          files: {
+            src: ['index.html']
+          }
+        } //dev
+      }, // cachebreaker
     
 
       clean: {
-
           all_css: ['*.sass-cache']
-          
-          
-        },
+      }, //clean
 
       uglify: {
         options: {
@@ -22,7 +34,7 @@ module.exports = function(grunt) {
 
       }, // uglify
 
-      // copying index.html and bower_components to dest folder
+      // copies index.html,readme.md and process scss/css to dest folder
       concat: {
         options: {
           //banner: '\n--------------------top of document ------------\n\n',
@@ -103,9 +115,6 @@ module.exports = function(grunt) {
       },//open browser
 
 
-     
-
-
       watch: {
         // watching everywhere really
         options: {
@@ -148,8 +157,8 @@ module.exports = function(grunt) {
         }, //mdfiles
 
         sass: {
-          files: 'public/sass/styles.scss',
-          tasks: ['compass:dev'],
+          files: 'public/sass/*.scss',
+          tasks: ['compass:dev', 'concat:dist3'],
           options: {
             livereload: true,
             cwd: {
@@ -158,27 +167,15 @@ module.exports = function(grunt) {
             }
           }
 
-        }, //sass
-
-        somecss: {
-          files: 'public/builds/css/styles.css',
-          tasks: ['concat:dist3'],
-          options: {
-            livereload: true,
-            cwd: {
-              files: 'public/sass/*.scss',
-              spawn: false
-            } 
-          } //options css
-          
-         
-      } //somecss
-
-        
+        } //sass
 
       } //watch
 
   }); //initConfig
+
+
+  // :grunt cache-breaker
+  grunt.loadNpmTasks('grunt-cache-breaker');
 
   // :grunt clean
   grunt.loadNpmTasks('grunt-contrib-clean');
@@ -195,9 +192,6 @@ module.exports = function(grunt) {
   // :grunt watch
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  // :grunt open
-  //grunt.loadNpmTasks('connect-livereload');
-
   // :grunt connect
   grunt.loadNpmTasks('grunt-contrib-connect');
 
@@ -211,7 +205,7 @@ module.exports = function(grunt) {
 
 // :grunt
 // default tasks
-grunt.registerTask('default', ['clean',  'open', 'dist',  'uglify', 'compass:dev', 'connect',  'watch']);
+grunt.registerTask('default', ['cachebreaker', 'clean',  'open', 'dist',  'uglify', 'compass:dev', 'connect',  'watch']);
 
 
 
