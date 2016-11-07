@@ -72,7 +72,7 @@ module.exports = function(grunt) {
       }, // concat ends
 
       // compass for sass - src/dest settings in config.rb
-      // compass:dev, concat:dist3 tasks
+      // compass:dev is task \\ concat:dist3 no more, just if need clean css then add to sass tasks
       compass: {
         dev: {
           options: {
@@ -152,6 +152,7 @@ module.exports = function(grunt) {
 
         sass: {
           files: 'public/sass/*.scss',
+          //dont need concat:dist3 unless i need plain css
           tasks: ['compass:dev'],
           options: {
             livereload: true
