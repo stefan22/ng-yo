@@ -22,6 +22,8 @@ Overview:
 #####  <kbd>[ruby documentation](https://www.ruby-lang.org/en/)</kbd>
 #####  <kbd>[bundler.io documentation](http://bundler.io/)</kbd>
 
+<br />
+
 > __Plugins Included__:     
 > __grunt-contrib-concat__, __grunt-contrib-connect__, __grunt-contrib-uglify__, __grunt-open__,          
 > __grunt-contrib-watch__, __grunt-contrib-compass__, __grunt-watch__, __grunt-connect__ with __livereload__
