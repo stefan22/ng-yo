@@ -30,6 +30,7 @@ Overview:
 
 ![workflow-folder screenshot](/workflow-folder.png?raw=true "workflow-folder")
 
+<br />
 ### Public/builds folder
 
 1. `public/['js'][sass]/, public/*.*`  => files to be process
@@ -81,7 +82,10 @@ git push --all --force
 ```
     
 
-3. type __bundle install__    
+3. type __$ gem install bundler__ 
+                __bundle install__
+
+4. type  __npm install__ & __bower install__
 
 
 ### grunt
