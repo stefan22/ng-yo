@@ -16,6 +16,6 @@
 
 	animal1.name = 'loone';
 	animal1.type = 'duck';
-	animal1.legs = 2;
+	animal1.legs = 225;
 
 })();
