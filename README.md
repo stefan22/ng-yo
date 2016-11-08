@@ -5,8 +5,9 @@ Overview:
 ---------
 
   Takes care of processing Sass, combining scripts and loading frameworks like <kbd>Bootstrap</kbd>, <kbd>JQuery</kbd>
-  and <kbd>Angular</kbd> with <kbd>Grunt.js</kbd> using <kbd>npm</kbd> and <kbd>bower</kbd>. <kbd>Sass</kbd>,    
-  <kbd>Compass</kbd> and <kbd>Susy</kbd> using bundle(ruby).
+  and <kbd>Angular</kbd> with       
+  <kbd>Grunt.js</kbd> using <kbd>npm</kbd> and <kbd>bower</kbd>. <kbd>Sass</kbd>, <kbd>Compass</kbd> and <kbd>Susy</kbd>   
+  using bundle(ruby).
 
   
    
