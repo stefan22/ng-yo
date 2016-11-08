@@ -17,6 +17,10 @@ Overview:
 #####  <kbd>[bootstrap documentation](http://getbootstrap.com/)</kbd>
 #####  <kbd>[jQuery library](https://jquery.com/)</kbd>
 #####  <kbd>[grunt documentation](http://http://gruntjs.com/)</kbd>
+#####  <kbd>[npm documentation](https://www.npmjs.com/)</kbd>
+#####  <kbd>[bower documentation](https://bower.io/)</kbd>
+#####  <kbd>[ruby documentation](https://www.ruby-lang.org/en/)</kbd>
+#####  <kbd>[bundler.io documentation](http://bundler.io/)</kbd>
 
 > __Plugins Included__:     
 > __grunt-contrib-concat__, __grunt-contrib-connect__, __grunt-contrib-uglify__, __grunt-open__,          
