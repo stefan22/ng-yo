@@ -5,7 +5,8 @@ Overview:
 ---------
 
   Takes care of processing Sass, combining scripts and loading frameworks like <kbd>Bootstrap</kbd>, <kbd>JQuery</kbd>
-  and <kbd>Angular</kbd> with <kbd>Grunt.js</kbd> using <kbd>npm</kbd> and <kbd>bower</kbd>. Sass,Compass and Susy using bundle(ruby).
+  and <kbd>Angular</kbd> with       
+  <kbd>Grunt.js</kbd> using <kbd>npm</kbd> and <kbd>bower</kbd>. <kbd>Sass</kbd>, <kbd>Compass</kbd> and <kbd>Susy</kbd> using bundle(ruby).
 
   
    
@@ -20,7 +21,7 @@ Overview:
 > __Plugins Included__:     
 > __grunt-contrib-concat__, __grunt-contrib-connect__, __grunt-contrib-uglify__, __grunt-open__,          
 > __grunt-contrib-watch__, __grunt-contrib-compass__, __grunt-watch__, __grunt-connect__ with __livereload__
-> __matchdep__, __grunt-contrib-compass__, __grunt-cache-breaker__
+> __matchdep__, __grunt-contrib-compass__, __grunt-cache-breaker__, __grunt-contrib-clean__
 
 
 ![workflow-folder screenshot](/workflow-folder.png?raw=true "workflow-folder")
