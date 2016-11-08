@@ -6,9 +6,10 @@ module.exports = function(grunt) {
         dev: {
           options: {
             match: [
-              'bootstrap.css', 'reset.css', 'styles.css', 'jquery.js',
-              'bootstrap.js', 'angular.js', 'angular-resource.js',
-              'scripts.min.js'
+              'bootstrap.css', 'reset.css','styles.css',
+              'jquery.js','bootstrap.js','angular.js',
+              'angular-resource.js','scripts.min.js',
+              'index.html'
             ]
           },
           files: {
@@ -19,8 +20,19 @@ module.exports = function(grunt) {
     
 
       clean: {
-          all_css: ['*.sass-cache']
+          all_css: ['.sass-cache/'],
+          //before generating any new files, remove any previously-created
+          //html files
+          test: ['public/builds/index.html']
       }, //clean
+
+      copy: {
+        single: {
+          files: [{
+            src: ['index.html'], dest: 'public/builds/index.html'
+          }]
+        }  
+      }, //copy
 
       uglify: {
         options: {
@@ -45,34 +57,25 @@ module.exports = function(grunt) {
           //footer: '\n\n----------------------end of document --------------\n'
         },
 
+       
+        /*
         dist1: {
           //sends index.html to dest folder
           src: ['index.html'],
           dest: 'public/builds/index.html'
         }, //concat1
+       */
 
         dist2: {
           // sends readme.md to dest folder
           src: ['README.md'],
           dest: 'public/builds/assets/README.md'
-        }, //concat2
-
-         dist3: {
-          // sends scss to dest folder
-          options: {
-            banner: '/*----------------------Beg.Of Styles.css ------------*/\n\n\n',
-            separator:'\n\n/*---------------- end of a file --------------*/\n\n'
-          },
-          src: ['public/sass/*.scss'],
-          dest: 'public/builds/css/styles.css'
-        } //concat3
-
-       
+        } //concat2
 
       }, // concat ends
 
       // compass for sass - src/dest settings in config.rb
-      // compass:dev is task \\ concat:dist3 no more, just if need clean css then add to sass tasks
+      // compass:dev is task - cleans cache first.
       compass: {
         dev: {
           options: {
@@ -82,7 +85,7 @@ module.exports = function(grunt) {
 
       }, //compass
 
-      // helps makes it more automatic
+      // launches local server
       connect: {
         //connect
         server: {
@@ -109,7 +112,7 @@ module.exports = function(grunt) {
 
      open: {
         all: {
-          //gets port from connect configuration
+          //opens browser - gets port from server config above
           path: 'http://localhost:9001'
         }
 
@@ -117,7 +120,7 @@ module.exports = function(grunt) {
 
 
       watch: {
-        // watching everywhere really
+        // watching everybody
         options: {
           //run faster
           spawn: false,
@@ -130,6 +133,7 @@ module.exports = function(grunt) {
           options: {
             reload: true
           }
+         
         }, //confiFiles
 
         scripts: {
@@ -139,8 +143,10 @@ module.exports = function(grunt) {
         },//scripts
 
         html: {
+          //runs clean and then copy
+          //cachebreakers gives me 200s & 304s everytime
           files: 'index.html',
-          tasks: ['concat:dist1']
+          tasks: ['clean:test', 'cachebreaker', 'copy']
         
         },//html
 
@@ -151,9 +157,9 @@ module.exports = function(grunt) {
         }, //mdfiles
 
         sass: {
+          //run clean cache then processes
           files: 'public/sass/*.scss',
-          //dont need concat:dist3 unless i need plain css
-          tasks: ['compass:dev'],
+          tasks: ['clean:all_css', 'compass:dev'],
           options: {
             livereload: true
           }
@@ -170,6 +176,9 @@ module.exports = function(grunt) {
 
   // :grunt clean
   grunt.loadNpmTasks('grunt-contrib-clean');
+
+  // :grunt copy
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   // :grunt uglify
   grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -189,14 +198,12 @@ module.exports = function(grunt) {
   // :grunt open
   grunt.loadNpmTasks('grunt-open');
 
-  
-
-//register concat dist1 & dist2 
-  grunt.registerTask('dist', ['concat:dist1', 'concat:dist2', 'concat:dist3']);
+//register concat dist2 
+  grunt.registerTask('dist', ['concat:dist2']);
 
 // :grunt
 // default tasks
-grunt.registerTask('default', ['cachebreaker', 'clean',  'open', 'dist',  'uglify', 'compass:dev', 'connect',  'watch']);
+grunt.registerTask('default', ['cachebreaker', 'clean', 'copy',  'open', 'dist',  'uglify', 'compass:dev', 'connect',  'watch']);
 
 
 
