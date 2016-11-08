@@ -40,26 +40,6 @@ Overview:
 3.  index.html and readme.md (copying to builds with concat plugin just for fun/don't need it.         
 4.  node_modules,bower_components (normally .ignore)
 
-```
-accidentally included node_modules and bower_components = helped me get rid of node_modules
-
-git filter-branch -f --index-filter "git rm -rf --cached --ignore-unmatch FOLDERNAME" -- --all
-
-replace FOLDERNAME with the file or folder you wish to remove from the given git repository.
-
-Once this is done run the following commands to clean up the local repository
-
-rm -rf .git/refs/original/
-git reflog expire --expire=now --all
-git gc --prune=now
-git gc --aggressive --prune=now
-
-Now push all the changes to the remote repository
-
-git push --all --force
-````
-  
-
 
 ### Sass ( using bundler)
 
