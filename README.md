@@ -33,14 +33,14 @@ Overview:
 ![workflow-folder screenshot](/workflow-folder.png?raw=true "workflow-folder")
 
 <br />
-### i Public/builds folder
+## i Public/builds folder
 
 1. `public/['js'][sass]/, index.html`  => files to be process
 2. `public/builds/` => files processed
 3.  node_modules,bower_components (normally .ignore)
 
 
-### ii Sass ( using bundler)
+## ii Sass ( using bundler)
 
 __ii.1__ create a `Gemfile` with:
 
@@ -82,7 +82,7 @@ __ii.5__ type  __npm install__ & __bower install__
 
 
 
-### grunt
+## grunt
 
 1. run each command individually.              
     *  Ex. `grunt watch` or `grunt uglify`         
@@ -93,7 +93,7 @@ __ii.5__ type  __npm install__ & __bower install__
  
 <br />
 <hr />
-### Installation:  
+## Installation:  
 1. Download or clone this repository to a directory:
       * Mac or Windows: `https://github.com/stefan22/workflow-folder.git`
      
