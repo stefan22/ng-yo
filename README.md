@@ -35,10 +35,9 @@ Overview:
 <br />
 ### Public/builds folder
 
-1. `public/['js'][sass]/, public/*.*`  => files to be process
+1. `public/['js'][sass]/, index.html`  => files to be process
 2. `public/builds/` => files processed
-3.  index.html and readme.md (copying to builds with concat plugin just for fun/don't need it.         
-4.  node_modules,bower_components (normally .ignore)
+3.  node_modules,bower_components (normally .ignore)
 
 
 ### Sass ( using bundler)
@@ -62,12 +61,25 @@ Overview:
             output_style = :expanded
 
 ```
+
+3. create __Gemfile__
+
+```
+             source 'https://rubygems.org'
+             gem 'sass'
+             gem 'compass'
+             gem 'susy'
+
+```
     
 
-3. type __$ gem install bundler__ 
+4. type __$ gem install bundler__ 
                 __bundle install__
+                
+                
 
-4. type  __npm install__ & __bower install__
+5. type  __npm install__ & __bower install__
+
 
 
 ### grunt
