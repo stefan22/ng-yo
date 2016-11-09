@@ -84,9 +84,9 @@ __ii.5__ type  __npm install__ & __bower install__
 
 ### grunt
 
-__1.__ run each command individually.              
+1. run each command individually.              
     *  Ex. `grunt watch` or `grunt uglify`         
-__2.__ run them all with default task.             
+2. run them all with default task.             
     *  Ex. `grunt`
     *  view: `http://localhost:9001`
 
@@ -94,9 +94,9 @@ __2.__ run them all with default task.
 <br />
 <hr />
 ### Installation:  
-__1.__ Download or clone this repository to a directory:
+1. Download or clone this repository to a directory:
       * Mac or Windows: `https://github.com/stefan22/workflow-folder.git`
      
-__2.__ Install dependencies
+2. Install dependencies
 
 
