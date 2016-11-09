@@ -33,16 +33,16 @@ Overview:
 ![workflow-folder screenshot](/workflow-folder.png?raw=true "workflow-folder")
 
 <br />
-### Public/builds folder
+### i Public/builds folder
 
 1. `public/['js'][sass]/, index.html`  => files to be process
 2. `public/builds/` => files processed
 3.  node_modules,bower_components (normally .ignore)
 
 
-### Sass ( using bundler)
+### ii Sass ( using bundler)
 
-1. create a `Gemfile` with:
+ii.1 create a `Gemfile` with:
 
                  source 'https://rubygems.org'                           
                  gem 'sass'
@@ -50,7 +50,7 @@ Overview:
                  gem 'susy'
 
 
-2. create __config.rb__    
+ii.2 create __config.rb__    
 
 ```
             require 'susy'
@@ -62,7 +62,7 @@ Overview:
 
 ```
 
-3. create __Gemfile__
+ii.3 create __Gemfile__
 
 ```
              source 'https://rubygems.org'
@@ -73,12 +73,12 @@ Overview:
 ```
     
 
-4. type __$ gem install bundler__ 
+ii.4 type __$ gem install bundler__ 
                 __bundle install__
                 
                 
 
-5. type  __npm install__ & __bower install__
+ii.5 type  __npm install__ & __bower install__
 
 
 
