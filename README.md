@@ -42,7 +42,7 @@ Overview:
 
 ### ii Sass ( using bundler)
 
-ii.1 create a `Gemfile` with:
+__ii.1__ create a `Gemfile` with:
 
                  source 'https://rubygems.org'                           
                  gem 'sass'
@@ -50,7 +50,7 @@ ii.1 create a `Gemfile` with:
                  gem 'susy'
 
 
-ii.2 create __config.rb__    
+__ii.2__ create __config.rb__    
 
 ```
             require 'susy'
@@ -62,7 +62,7 @@ ii.2 create __config.rb__
 
 ```
 
-ii.3 create __Gemfile__
+__ii.3__ create __Gemfile__
 
 ```
              source 'https://rubygems.org'
@@ -73,20 +73,20 @@ ii.3 create __Gemfile__
 ```
     
 
-ii.4 type __$ gem install bundler__ 
+__ii.4__ type __$ gem install bundler__ 
                 __bundle install__
                 
                 
 
-ii.5 type  __npm install__ & __bower install__
+__ii.5__ type  __npm install__ & __bower install__
 
 
 
 ### grunt
 
-1. run each command individually.              
+__1.__ run each command individually.              
     *  Ex. `grunt watch` or `grunt uglify`         
-2. run them all with default task.             
+__2.__ run them all with default task.             
     *  Ex. `grunt`
     *  view: `http://localhost:9001`
 
@@ -94,9 +94,9 @@ ii.5 type  __npm install__ & __bower install__
 <br />
 <hr />
 ### Installation:  
-1. Download or clone this repository to a directory:
+__1.__ Download or clone this repository to a directory:
       * Mac or Windows: `https://github.com/stefan22/workflow-folder.git`
      
-2. Install dependencies
+__2.__ Install dependencies
 
 
