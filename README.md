@@ -82,7 +82,7 @@ __ii.5__ type  __npm install__ & __bower install__
 
 <br />
 
-## iii grunt
+## iii Grunt
 
 1. run each command individually.              
     *  Ex. `grunt watch` or `grunt uglify`         
