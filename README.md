@@ -35,14 +35,14 @@ Overview:
 <br />
 ## :one: Public/builds folder
 
-1. `public/['js'][sass]/, index.html`  => files to be process
-2. `public/builds/` => files processed
-3.  node_modules,bower_components (normally .ignore)
+   1.1  `public/['js'][sass]/, index.html`  => files to be process
+   1.2 `public/builds/` => files processed
+   1.3  node_modules,bower_components (normally .ignore)
 
 <br />
 ## :two: Sass ( using bundler)
 
-__ii.1__ create a `Gemfile` with:
+   __1.1__ create a `Gemfile` with:
 
                  source 'https://rubygems.org'                           
                  gem 'sass'
@@ -50,7 +50,7 @@ __ii.1__ create a `Gemfile` with:
                  gem 'susy'
 
 
-__ii.2__ create __config.rb__    
+   __1.2__ create __config.rb__    
 
 ```
             require 'susy'
@@ -62,7 +62,7 @@ __ii.2__ create __config.rb__
 
 ```
 
-__ii.3__ create __Gemfile__
+   __1.3__ create __Gemfile__
 
 ```
              source 'https://rubygems.org'
@@ -73,30 +73,30 @@ __ii.3__ create __Gemfile__
 ```
     
 
-__ii.4__ type __$ gem install bundler__ 
+   __1.4__ type __$ gem install bundler__ 
                 __bundle install__
                 
                 
 
-__ii.5__ type  __npm install__ & __bower install__
+   __1.5__ type  __npm install__ & __bower install__
 
 <br />
 
 ## :three: Grunt
 
-1. run each command individually.              
-    *  Ex. `grunt watch` or `grunt uglify`         
-2. run them all with default task.             
-    *  Ex. `grunt`
-    *  view: `http://localhost:9001`
+   3.1 run each command individually.              
+     * Ex. `grunt watch` or `grunt uglify`         
+   3.2 run them all with default task.             
+     * Ex. `grunt`
+     * view: `http://localhost:9001`
 
  
 <br />
 <hr />
 ## :four: Installation:  
-1. Download or clone this repository to a directory:
-      * Mac or Windows: `https://github.com/stefan22/workflow-folder.git`
+   4.1 Download or clone this repository to a directory:
+     * Mac or Windows: `https://github.com/stefan22/workflow-folder.git`
      
-2. Install dependencies
+   4.2 Install dependencies
 
 
