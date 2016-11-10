@@ -85,23 +85,23 @@ Overview:
 
 ## :three: Grunt
 
-__3.1__     run each command individually.
-            *  Ex. grunt watch or grunt uglify 
+__3.1__     run each command individually.        
+            *  Ex. grunt watch or grunt uglify          
       
         
-__3.2__     run them all with default task.   
-            *  Ex. grunt
-            *  view: http://localhost:9001
+__3.2__     run them all with default task.            
+            *  Ex. grunt         
+            *  view: http://localhost:9001         
 
  
 <br />
 <hr />
 ## :four: Installation:  
 
-__4.1__     Download or clone this repository to a directory:      
-            *  Mac or Windows: [workflow-folder](https://github.com/stefan22/workflow-folder.git)         
+__4.1__     Download or clone this repository to a directory:                 
+            *  Mac or Windows: [workflow-folder](https://github.com/stefan22/workflow-folder.git)                   
      
-__4.2__     Install dependencies
+__4.2__     Install dependencies      
    
    
 [:top:](https://github.com/stefan22/workflow-folder/blob/master/README.md)
