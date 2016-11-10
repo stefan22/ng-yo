@@ -12,15 +12,15 @@ Overview:
    
 ## Links to resources:
   
-#####  <kbd>[sass documentation](http://sass-lang.com/)</kbd>
-#####  <kbd>[angular documentation](https://angularjs.org/)</kbd>
-#####  <kbd>[bootstrap documentation](http://getbootstrap.com/)</kbd>
-#####  <kbd>[jQuery library](https://jquery.com/)</kbd>
-#####  <kbd>[grunt documentation](http://http://gruntjs.com/)</kbd>
-#####  <kbd>[npm documentation](https://www.npmjs.com/)</kbd>
-#####  <kbd>[bower documentation](https://bower.io/)</kbd>
-#####  <kbd>[ruby documentation](https://www.ruby-lang.org/en/)</kbd>
-#####  <kbd>[bundler.io documentation](http://bundler.io/)</kbd>
+##### :pill:  <kbd>[sass documentation](http://sass-lang.com/)</kbd>
+##### :pill:  <kbd>[angular documentation](https://angularjs.org/)</kbd>
+##### :pill:  <kbd>[bootstrap documentation](http://getbootstrap.com/)</kbd>
+##### :pill:  <kbd>[jQuery library](https://jquery.com/)</kbd>
+##### :pill:  <kbd>[grunt documentation](http://http://gruntjs.com/)</kbd>
+##### :pill:  <kbd>[npm documentation](https://www.npmjs.com/)</kbd>
+##### :pill:  <kbd>[bower documentation](https://bower.io/)</kbd>
+##### :pill:  <kbd>[ruby documentation](https://www.ruby-lang.org/en/)</kbd>
+##### :pill:  <kbd>[bundler.io documentation](http://bundler.io/)</kbd>
 
 <br />
 
