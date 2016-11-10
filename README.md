@@ -98,7 +98,8 @@ __3.2__     run them all with default task.
 <hr />
 ## :four: Installation:  
 
-__4.1__     Download or clone this repository to a directory:                 
+__4.1__     Download or clone this repository to a directory:  
+
             :radio_button:  Mac or Windows: [workflow-folder](https://github.com/stefan22/workflow-folder.git)                   
      
 __4.2__     Install dependencies      
