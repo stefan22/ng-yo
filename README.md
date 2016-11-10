@@ -97,6 +97,7 @@ Overview:
 <br />
 <hr />
 ## :four: Installation:  
+
    4.1  Download or clone this repository to a directory:      
    
       - Mac or Windows: [workflow-folder](https://github.com/stefan22/workflow-folder.git)
@@ -104,6 +105,6 @@ Overview:
    4.2  Install dependencies
    
    
-   [:top:](http://github.com/stefan22/worflow-folder.git)
+# [:top:](https://github.com/stefan22/workflow-folder/blob/master/README.md)
 
 
