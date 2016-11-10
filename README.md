@@ -24,7 +24,7 @@ Overview:
 
 <br />
 
-> __Plugins Included__:     
+> :package: __Plugins Included__:     
 > __grunt-contrib-concat__, __grunt-contrib-connect__, __grunt-contrib-uglify__, __grunt-open__,          
 > __grunt-contrib-watch__, __grunt-contrib-compass__, __grunt-watch__, __grunt-connect__ with __livereload__
 > __matchdep__, __grunt-contrib-compass__, __grunt-cache-breaker__, __grunt-contrib-clean__
