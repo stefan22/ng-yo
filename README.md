@@ -33,7 +33,7 @@ Overview:
 ![workflow-folder screenshot](/workflow-folder.png?raw=true "workflow-folder")
 
 <br />
-## i Public/builds folder
+## :one: Public/builds folder
 
 1. `public/['js'][sass]/, index.html`  => files to be process
 2. `public/builds/` => files processed
