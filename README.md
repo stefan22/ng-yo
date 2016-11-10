@@ -84,8 +84,10 @@ Overview:
 
 ## :three: Grunt
 
-   3.1  run each command individually.              
-        - Ex. `grunt watch` or `grunt uglify`         
+   3.1  run each command individually.
+   
+        - Ex. `grunt watch` or `grunt uglify`  
+        
    3.2  run them all with default task.             
         - Ex. `grunt`
         - view: `http://localhost:9001`
@@ -94,7 +96,8 @@ Overview:
 <br />
 <hr />
 ## :four: Installation:  
-   4.1  Download or clone this repository to a directory:             
+   4.1  Download or clone this repository to a directory:      
+   
         - Mac or Windows: `https://github.com/stefan22/workflow-folder.git`
      
    4.2  Install dependencies
