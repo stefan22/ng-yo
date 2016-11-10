@@ -88,7 +88,8 @@ Overview:
    
         - Ex. `grunt watch` or `grunt uglify`  
         
-   3.2  run them all with default task.             
+   3.2  run them all with default task.   
+   
         - Ex. `grunt`
         - view: `http://localhost:9001`
 
