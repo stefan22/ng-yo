@@ -86,12 +86,12 @@ Overview:
 ## :three: Grunt
 
 __3.1__     run each command individually.        
-            :radio_button:  Ex. grunt watch or grunt uglify          
+            :white_small_square:  Ex. grunt watch or grunt uglify          
       
         
 __3.2__     run them all with default task.            
-            :radio_button:  Ex. grunt         
-            :radio_button:  view: http://localhost:9001         
+            :white_small_square:  Ex. grunt         
+            :white_small_square:  view: http://localhost:9001         
 
  
 <br />
@@ -99,8 +99,7 @@ __3.2__     run them all with default task.
 ## :four: Installation:  
 
 __4.1__     Download or clone this repository to a directory:  
-
-            :radio_button:  Mac or Windows: [workflow-folder](https://github.com/stefan22/workflow-folder.git)                   
+            :white_small_square:  Mac or Windows: [workflow-folder](https://github.com/stefan22/workflow-folder.git)                   
      
 __4.2__     Install dependencies      
    
