@@ -40,7 +40,7 @@ Overview:
 3.  node_modules,bower_components (normally .ignore)
 
 <br />
-## ii Sass ( using bundler)
+## :two: Sass ( using bundler)
 
 __ii.1__ create a `Gemfile` with:
 
@@ -82,7 +82,7 @@ __ii.5__ type  __npm install__ & __bower install__
 
 <br />
 
-## iii Grunt
+## :three: Grunt
 
 1. run each command individually.              
     *  Ex. `grunt watch` or `grunt uglify`         
@@ -93,7 +93,7 @@ __ii.5__ type  __npm install__ & __bower install__
  
 <br />
 <hr />
-## iV Installation:  
+## :four: Installation:  
 1. Download or clone this repository to a directory:
       * Mac or Windows: `https://github.com/stefan22/workflow-folder.git`
      
