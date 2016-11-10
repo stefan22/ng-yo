@@ -12,15 +12,15 @@ Overview:
    
 ## Links to resources:
   
-##### :pill:  <kbd>[sass documentation](http://sass-lang.com/)</kbd>
-##### :pill:  <kbd>[angular documentation](https://angularjs.org/)</kbd>
-##### :pill:  <kbd>[bootstrap documentation](http://getbootstrap.com/)</kbd>
-##### :pill:  <kbd>[jQuery library](https://jquery.com/)</kbd>
-##### :pill:  <kbd>[grunt documentation](http://http://gruntjs.com/)</kbd>
-##### :pill:  <kbd>[npm documentation](https://www.npmjs.com/)</kbd>
-##### :pill:  <kbd>[bower documentation](https://bower.io/)</kbd>
-##### :pill:  <kbd>[ruby documentation](https://www.ruby-lang.org/en/)</kbd>
-##### :pill:  <kbd>[bundler.io documentation](http://bundler.io/)</kbd>
+##### :bookmark:  <kbd>[sass documentation](http://sass-lang.com/)</kbd>
+##### :bookmark:  <kbd>[angular documentation](https://angularjs.org/)</kbd>
+##### :bookmark:  <kbd>[bootstrap documentation](http://getbootstrap.com/)</kbd>
+##### :bookmark:  <kbd>[jQuery library](https://jquery.com/)</kbd>
+##### :bookmark:  <kbd>[grunt documentation](http://http://gruntjs.com/)</kbd>
+##### :bookmark:  <kbd>[npm documentation](https://www.npmjs.com/)</kbd>
+##### :bookmark:  <kbd>[bower documentation](https://bower.io/)</kbd>
+##### :bookmark:  <kbd>[ruby documentation](https://www.ruby-lang.org/en/)</kbd>
+##### :bookmark:  <kbd>[bundler.io documentation](http://bundler.io/)</kbd>
 
 <br />
 
