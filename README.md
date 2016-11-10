@@ -86,7 +86,7 @@ Overview:
 
    3.1  run each command individually.
    
-     -  Ex. grunt **watch** or **grunt uglify** 
+      -  Ex. grunt watch or grunt uglify 
         
    3.2  run them all with default task.   
    
@@ -105,6 +105,6 @@ Overview:
    4.2  Install dependencies
    
    
-# [:top:](https://github.com/stefan22/workflow-folder/blob/master/README.md)
+[:top:](https://github.com/stefan22/workflow-folder/blob/master/README.md)
 
 
