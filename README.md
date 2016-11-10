@@ -35,9 +35,9 @@ Overview:
 <br />
 ## :one: Public/builds folder
 
-   1.1  `public/['js'][sass]/, index.html`  => files to be process
-   1.2 `public/builds/` => files processed
-   1.3  node_modules,bower_components (normally .ignore)
+   1.1  `public/['js'][sass]/, index.html`  => files to be process          
+   1.2  `public/builds/` => files processed                 
+   1.3   node_modules,bower_components (normally .ignore)                 
 
 <br />
 ## :two: Sass ( using bundler)
@@ -103,7 +103,7 @@ __4.1__     Download or clone this repository to a directory:
      
 __4.2__     Install dependencies      
    
-   
+<br />   
 [:top:](https://github.com/stefan22/workflow-folder/blob/master/README.md)
 
 
