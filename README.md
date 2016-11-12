@@ -30,7 +30,7 @@ Overview:
 > __matchdep__, __grunt-contrib-compass__, __grunt-cache-breaker__, __grunt-contrib-clean__
 
 
-![workflow-folder screenshot](/workflow-folder.png?raw=true "workflow-folder")
+![workflow-folder screenshot](/workflow-folder1.png?raw=true "workflow-folder")
 
 <br />
 ## :one: Public/builds folder
