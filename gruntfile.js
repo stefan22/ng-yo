@@ -1,4 +1,5 @@
 module.exports = function(grunt) {
+  
   //SL Proj Config.
   grunt.initConfig({
 
@@ -43,7 +44,7 @@ module.exports = function(grunt) {
           sourceMapName: 'public/builds/assets/sourcemap.map'
         },
         builds: {
-          src:['public/js/*.js'],
+          src:['public/js/scripts.js'],
           dest:'public/builds/js/scripts.min.js'
         }
 
@@ -170,6 +171,7 @@ module.exports = function(grunt) {
 
   }); //initConfig
 
+ 
 
   // :grunt cache-breaker
   grunt.loadNpmTasks('grunt-cache-breaker');
@@ -204,6 +206,7 @@ module.exports = function(grunt) {
 // :grunt
 // default tasks
 grunt.registerTask('default', ['cachebreaker', 'clean', 'copy',  'open', 'dist',  'uglify', 'compass:dev', 'connect',  'watch']);
+
 
 
 

@@ -32,8 +32,14 @@
   },
   "dependencies": {
     "coffee-script": "^1.11.1"
+  },
+  //idea is to run this dependencies automatically too.
+  //"preferGlobal": "true",
+  "bin": {
+    "cli.js": "public/js/cli.js"
+  },
+  "scripts": {
+    "install": "link-bin"
   }
-  
-  
 
 }

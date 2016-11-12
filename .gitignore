@@ -27,6 +27,12 @@ node-install
 bower_components
 .DS_Store
 .sass-cache
+.git
+CVS
+.svn
+.hg
+_*
+npm-debug.log
 
 # Logs and databases #
 ######################
