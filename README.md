@@ -2,7 +2,7 @@ Web Workflow (lighter new & improved!)
 ======================================
 
 Overview:
-:bookmark:
+
 
   Takes care of processing Sass, combining scripts and loading frameworks like <kbd>Bootstrap</kbd>, <kbd>JQuery</kbd>
   and <kbd>Angular</kbd> with       
