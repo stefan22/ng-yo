@@ -2,7 +2,7 @@ Web Workflow (lighter new & improved!)
 ======================================
 
 Overview:
----------
+:bookmark:
 
   Takes care of processing Sass, combining scripts and loading frameworks like <kbd>Bootstrap</kbd>, <kbd>JQuery</kbd>
   and <kbd>Angular</kbd> with       
@@ -71,8 +71,9 @@ Overview:
              gem 'susy'
 
 ```
-    
-
+   
+   
+   
    __1.4__ type __$ gem install bundler__ 
                 __bundle install__
                 
